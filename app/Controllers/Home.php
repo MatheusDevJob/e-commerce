@@ -6,6 +6,7 @@ class Home extends BaseController
 {
     public function index()
     {
-        return view('welcome_message');
+        $dados['carrocel'] = view('loja/carrocel');
+        return view('index', $dados);
     }
 }

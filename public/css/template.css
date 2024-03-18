@@ -1,0 +1,38 @@
+#perfil_image {
+  height: 3em;
+  width: 3em;
+  object-fit: cover;
+  border-radius: 100%;
+  cursor: pointer;
+}
+
+#nav_top{
+  position: fixed;
+  width: 100%;
+}
+
+header nav {
+  max-height: 56px;
+}
+
+#ul_login {
+  padding: 10px 13px;
+  width: 300px;
+  margin: 3px 0;
+}
+
+#olho_senha {
+  position: relative;
+  right: -243px;
+  top: -32px;
+}
+
+#div_conta {
+  animation: botao_conta 0.5s ease-in;
+}
+
+@keyframes botao_conta {
+  from {
+    margin-right: -150px;
+  }
+}
