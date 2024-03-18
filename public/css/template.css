@@ -1,3 +1,7 @@
+body {
+  background-color: #f9f4fa;
+}
+
 #perfil_image {
   height: 3em;
   width: 3em;
@@ -6,13 +10,17 @@
   cursor: pointer;
 }
 
-#nav_top{
+#nav_top {
   position: fixed;
   width: 100%;
 }
 
 header nav {
   max-height: 56px;
+}
+
+header a {
+  color: #fff !important;
 }
 
 #ul_login {
@@ -27,6 +35,9 @@ header nav {
   top: -32px;
 }
 
+.borda_erro {
+  box-shadow: 0 0 5px 5px #ff2a2a !important;
+}
 #div_conta {
   animation: botao_conta 0.5s ease-in;
 }

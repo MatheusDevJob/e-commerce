@@ -28,7 +28,6 @@
         </ul>
     </nav>
     <div class="body_conteudo">
-        <?= $carrocel ?>
         <div style="height: 200vh;">a</div>
     </div>
 </div>

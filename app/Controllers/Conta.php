@@ -46,9 +46,15 @@ final class Conta extends BaseController
 
     function cadastrar_usuario()
     {
+        $nome = $this->request->getPost('nome');
+        $telefone = $this->request->getPost('telefone');
         $email = $this->request->getPost('email');
         $senha = $this->request->getPost('senha');
 
+        $telefone = str_replace([' ', '-'], '', $telefone);
+
         $senha = password_hash($senha, PASSWORD_BCRYPT);
+        $retorno = $this->conta_m->cadastrar_usuario($nome, $email, $senha, $telefone);
+        echo json_encode($retorno);
     }
 }
